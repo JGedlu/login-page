@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background">
+    <!-- Background particle animation will go here -->
+  </div>
+
+  <div class="container">
+    <section id="login-section">
+      <h1>Welcome</h1>
+      <form id="login-form">
+        <div class="input-group">
+          <input type="text" id="usernameOrEmail" name="usernameOrEmail" placeholder="Username or Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Log In</button>
+        <p>Don't have an account? <a href="#" id="create-account-link">Create one</a></p>
+      </form>
+    </section>
+
+    <section id="create-account-section" class="hidden">
+      <h1>Create Account</h1>
+      <form id="create-account-form">
+        <div class="input-group">
+          <input type="text" id="new-username" name="new-username" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="new-password" name="new-password" placeholder="Password" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p id="back-to-login-link">Back to Login</p>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

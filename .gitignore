@@ -1,0 +1,7 @@
+# .gitignore
+node_modules/
+users.txt
+.env
+.DS_Store
+Thumbs.db
+*.log
